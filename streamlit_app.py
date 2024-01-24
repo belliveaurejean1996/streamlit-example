@@ -2,6 +2,12 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
+import talib 
+import yfinance as yf
+import matplotlib.pyplot as plt
+from datetime import date
+from dateutil.relativedelta import relativedelta
+from tkinter import *
 
 """
 # Welcome to Streamlit!
@@ -41,13 +47,7 @@ st.altair_chart(alt.Chart(df, height=700, width=700)
         size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
     ))
 
-# Let's import some packages
-import talib 
-import yfinance as yf
-import matplotlib.pyplot as plt
-from datetime import date
-from dateutil.relativedelta import relativedelta
-from tkinter import *
+
   
 
 StockList = ['NVDA', 'AMD', 'MSFT', 'AAPL', 'GOOGL']
